@@ -1,0 +1,37 @@
+[
+  {
+    "name": "kkk",
+    "email": "sdads@sssd.com",
+    "password": "asodjjs12"
+  },
+  {
+    "name": "naomi",
+    "email": "prueba@gmail.com",
+    "password": "12345"
+  },
+  {
+    "name": "octavio",
+    "email": "pruebas2@gmail.com",
+    "password": "1234"
+  },
+  {
+    "name": "compa",
+    "email": "compa1@gmail.com",
+    "password": "4567"
+  },
+  {
+    "name": "nuevo",
+    "email": "nuevo@gmail.com",
+    "password": "nuevo"
+  },
+  {
+    "name": "paola",
+    "email": "paola@gmail.com",
+    "password": "paola"
+  },
+  {
+    "name": "OCTAVIO",
+    "email": "octavio@apsmx.com",
+    "password": "1234"
+  }
+]

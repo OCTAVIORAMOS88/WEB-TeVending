@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dashboard - TeVending</title>
+
+    <!-- Fuentes y estilos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="estilo.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-logo" href="index.html">
+                <span>Te</span><span class="logo-highlight">Vending</span>
+            </a>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a class="navbar-link" href="index.html#inicio">Inicio</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="index.html#servicios">Servicios</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="index.html#productos">Productos</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="index.html#clientes">Clientes</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="index.html#contacto">Contacto</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <!-- Aquí se mostrará el usuario y el botón de cerrar sesión -->
+            </div>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="dashboard-section">
+        <div class="dashboard-container">
+            <h2 id="welcomeUser" class="welcome-message"></h2>
+            <p class="dashboard-description">
+                Bienvenido al panel de administración de <b>TeVending</b>.  
+                Aquí podrás gestionar tus productos, ver fichas técnicas y revisar la información más reciente.
+            </p>
+
+            <!-- Ejemplo de pestañas del dashboard -->
+  <div class="tabs-container">
+  <div class="tabs-header">
+    <div class="dropdown">
+      <button class="btn-primary dropdown-btn">
+        Contenido <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#" onclick="loadPDF('pdfs/NV9_Spectral-2.pdf', 'NV9 Spectral 2')">NV9 Spectral 2</a>
+        <a href="#" onclick="loadPDF('pdfs/OtroContenido.pdf', 'Otro Contenido')">Otro Contenido</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="btn-primary dropdown-btn">
+        Ficha Técnica <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#" onclick="loadPDF('pdfs/TAO-AV-II-Series.pdf', 'TAO-AV II Series')">TAO-AV II Series</a>
+        <a href="#" onclick="loadPDF('pdfs/OtraFicha.pdf', 'Otra Ficha Técnica')">Otra Ficha</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- VISOR DE PDF -->
+  <div class="pdf-viewer">
+    <h3 id="pdfTitle">Selecciona un documento para visualizar</h3>
+    <iframe id="pdfFrame" src="" width="100%" height="600" style="border: none;"></iframe>
+  </div>
+</div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a class="footer-logo" href="#inicio">
+                    <span>Te</span><span class="logo-highlight">Vending</span>
+                </a>
+                <p class="footer-description">Transformamos ideas en experiencias digitales excepcionales.</p>
+                <div class="footer-social">
+                    <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="social-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="links-group">
+                    <h3 class="links-title">Empresa</h3>
+                    <ul class="links-list">
+                        <li><a class="footer-link" href="#inicio">Inicio</a></li>
+                        <li><a class="footer-link" href="#servicios">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="links-group">
+                    <h3 class="links-title">Recursos</h3>
+                    <ul class="links-list">
+                        <li><a class="footer-link" href="registro.html">Documentación</a></li>
+                    </ul>
+                </div>
+                <div class="links-group">
+                    <h3 class="links-title">Legal</h3>
+                    <ul class="links-list">
+                        <li><a class="footer-link" href="Politicas.html">Términos</a></li>
+                        <li><a class="footer-link" href="Politicas.html">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p class="copyright">© 2025 Octavio RD. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a class="legal-link" href="Politicas.html">Política de privacidad</a>
+                    <span class="divider">|</span>
+                    <a class="legal-link" href="Politicas.html">Términos de servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/dashboard.js" defer></script>
+</body>
+</html>
+</body>
+</html>

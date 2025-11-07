@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>TeVending - Soluciones en Vending</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+    <link href="estilo.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-logo" href="index.html">
+                <span>Te</span>
+                <span class="logo-highlight">Vending</span>
+            </a>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a class="navbar-link" href="index.html#inicio">Inicio</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="index.html#servicios">Servicios</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="index.html#productos">Productos</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="index.html#clientes">Clientes</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="index.html#contacto">Contacto</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <div class="navbar-search">
+                    <input class="search-input" placeholder="Buscar..." type="text" />
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <a class="navbar-button" href="registro.html">Registro</a>
+            </div>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transforma tu negocio con <span>con los mejores equipos de cobro y servicio</span></h1>
+                <p class="hero-text">Impulsa tu presencia en el mundo del vending con nuestras soluciones innovadoras diseñadas para crecer tu empresa.</p>
+                <div class="hero-buttons">
+                    <a class="hero-button primary" href="#contacto">Comenzar ahora</a>
+                    <a class="hero-button secondary" href="https://www.youtube.com/watch?v=FBfxAT_ZWh0&t=0s">
+                        <i class="fas fa-play-circle"></i> Ver demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">1000</div>
+                        <div class="stat-label">Clientes</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">Satisfacción</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Soporte</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img alt="Persona usando tecnología moderna" src="https://i.ytimg.com/vi/FBfxAT_ZWh0/maxresdefault.jpg" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="servicios">
+        <div class="section-container">
+            <h2 class="section-title">Nuestros <span>Servicios</span></h2>
+            <p class="section-subtitle">Descubre todo lo que podemos ofrecerte para llevar tu negocio al siguiente nivel</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="feature-title">Monederos</h3>
+                    <p class="feature-description">Mejor gestión de pagos y transacciones para tu negocio.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Billeteros</h3>
+                    <p class="feature-description">Protección y seguridad con los más altos estándares de seguridad para la lectura de billetes.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Reparación</h3>
+                    <p class="feature-description">Contamos con servicio técnico especializado para mantenimiento y reparación de equipos de vending.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Las mejores marcas del mercado</h3>
+                    <p class="feature-description">Estrategias personalizadas para aumentar tu presencia y ventas en el mercado de vending.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="feature-title">Pagos con tarjeta</h3>
+                    <p class="feature-description">Agiliza tus procesos con las mejores marcas de gestión de pagos con tarjeta. Es una solución integral para tu negocio.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">Soporte</h3>
+                    <p class="feature-description">Asistencia técnica para resolver cualquier incidencia rápidamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="productos">
+        <div class="section-container">
+            <h2 class="section-title">Nuestros <span>Productos</span></h2>
+            <p class="section-subtitle">Soluciones listas para implementar que potenciarán tu negocio</p>
+            <div class="products-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="sistemas">PTY</button>
+                    <button class="tab-button" data-tab="plantillas">ICT</button>
+                    <button class="tab-button" data-tab="herramientas">Innovative</button>
+                </div>
+                <div class="tab-content active" id="sistemas">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-badge">Venta</div>
+                            <div class="product-image">
+                                <img alt="Sistema de cobro" src="https://images.squarespace-cdn.com/content/v1/65c52754a1b348242bd1c446/0d7005e1-56bd-4d07-b0b6-73a712e0a8ae/Platinum2.png?format=500w" />
+                            </div>
+                            <h3 class="product-title">Billetero PLATINUM</h3>
+                            <p class="product-description">Aceptación de $20 hasta $1000 pesos MN Configurable para varias divisas, preguntar cuales estan disponibles.
+                            </p>
+                            <div class="product-price">$480 DLS<span>/Unidad</span></div>
+                            <a class="product-button" href="./imagenes/PT_Platinum.pdf">Más información</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img alt="Sistema E-commerce" src="https://www.sonigraf.es/wp-content/uploads/2023/06/Taller-de-reparacion-de-tarjetas-electronicas-Madrid.jpg" />
+                            </div>
+                            <h3 class="product-title">Reparación de monederos, billeteros y tarjetas</h3>
+                            <p class="product-description">Experiencia de las marcas mas reconocidas en area del vending</p>
+                            <div class="product-price">$450<span>/servicio</span></div>
+                            <a class="product-button" href="#">Más información</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-badge">Venta</div>
+                            <div class="product-image">
+                                <img alt="Sistema ERP" src="https://www.apsmx.com/ssl/img/11.png" />
+                            </div>
+                            <h3 class="product-title">Kiosco</h3>
+                            <p class="product-description">Solución integral para gestión empresarial con módulos personalizables.</p>
+                            <div class="product-price">$120,000<span>/mes</span></div>
+                            <a class="product-button" href="./imagenes/20250624_SPEC_QUICKPAYMINI_ESP.pdf">Más información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="plantillas">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img alt="Plantilla Corporativa" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" />
+                            </div>
+                            <h3 class="product-title">Plantilla Corporativa</h3>
+                            <p class="product-description">Diseño profesional para empresas con múltiples secciones y elementos.</p>
+                            <div class="product-price">$49<span>/unica</span></div>
+                            <a class="product-button" href="#">Más información</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-badge">Más vendido</div>
+                            <div class="product-image">
+                                <img alt="Plantilla E-commerce" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" />
+                            </div>
+                            <h3 class="product-title">Tienda Elegante</h3>
+                            <p class="product-description">Plantilla optimizada para ventas online con carrito y checkout integrado.</p>
+                            <div class="product-price">$79<span>/unica</span></div>
+                            <a class="product-button" href="#">Más información</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img alt="Plantilla Portafolio" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80" />
+                            </div>
+                            <h3 class="product-title">Portafolio Creativo</h3>
+                            <p class="product-description">Diseño moderno para mostrar trabajos creativos y proyectos.</p>
+                            <div class="product-price">$39<span>/unica</span></div>
+                            <a class="product-button" href="#">Más información</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="herramientas">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-badge">Venta</div>
+                            <div class="product-image">
+                                <img alt="Herramienta SEO" src="./imagenes/Reliance_Web.webp" />
+                            </div>
+                            <h3 class="product-title">Analyzer</h3>
+                            <p class="product-description">Thermal Paper Width 58 mm to 80 mm using Adjustable Rear Guide 203 DPI Print Quality Built-in Paper Cutter.</p>
+                            <div class="product-price">$50<span>/DLS más IVA.</span></div>
+                            <a class="product-button" href="#">Descargar</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img alt="Herramienta Diseño" src="./imagenes/Spectral.webp" />
+                            </div>
+                            <h3 class="product-title">NV9 Spectral</h3>
+                            <p class="product-description">Multiprotocolo, aceptación $20, $50, $100, $200, $500 y $1000 Pesos</p>
+                            <div class="product-price">$490 <span>/DLS más IVA.</span></div>
+                            <a class="product-button" href="https://www.youtube.com/watch?v=GowcqQp-iEY">Más información</a>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-badge">Nuevo</div>
+                            <div class="product-image">
+                                <img alt="Herramienta Analytics" src="./imagenes/terpa.webp" />
+                            </div>
+                            <h3 class="product-title">Terpa solution</h3>
+                            <p class="product-description">Terminal MDB para el cobro con tarjeta.</p>
+                            <div class="product-price">$489<span>/DLS más IVA:</span></div>
+                            <a class="product-button" href="https://www.youtube.com/watch?v=zGs4shRHT3A">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoniales -->
+    <section class="testimonials" id="clientes">
+        <div class="section-container">
+            <h2 class="section-title">Lo que dicen <span>nuestros clientes</span></h2>
+            <p class="section-subtitle">Experiencias reales de empresas que han transformado su negocio con nosotros</p>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Desde que instalamos los dispositivos de cobro, nuestras ventas han aumentado en un 150%.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img alt="Cliente satisfecho" class="author-avatar" src="https://randomuser.me/api/portraits/women/45.jpg" />
+                        <div class="author-info">
+                            <h4 class="author-name">María González</h4>
+                            <p class="author-position">CEO, TiendaFashion</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">La implementación fue rápida y sin problemas. Lo que más valoro es la capacidad de personalización que ofrecen los empleados.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img alt="Cliente satisfecho" class="author-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" />
+                        <div class="author-info">
+                            <h4 class="author-name">Carlos Mendoza</h4>
+                            <p class="author-position">Director,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">Como pequeña empresa, necesitábamos una solución accesible pero potente. TeVending superó todas nuestras expectativas.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img alt="Cliente satisfecho" class="author-avatar" src="https://randomuser.me/api/portraits/women/68.jpg" />
+                        <div class="author-info">
+                            <h4 class="author-name">Ana Rodríguez</h4>
+                            <p class="author-position">Fundadora, VendingPro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clients-logos">
+                <h3 class="logos-title">Confían en nosotros</h3>
+                <div class="logos-grid">
+                    <img alt="Cliente 1" class="client-logo" src="https://wallpapercave.com/wp/wp2812978.png" />
+                    <img alt="Cliente 2" class="client-logo" src="https://logodownload.org/wp-content/uploads/2020/01/grupo-bimbo-logo.png" />
+                    <img alt="Cliente 3" class="client-logo" src="https://toppng.com/uploads/preview/coca-cola-bottle-logo-11550196530axbepymoob.png" />
+                    <img alt="Cliente 4" class="client-logo" src="https://th.bing.com/th/id/R.e6492a97f01744d3ec79701566def5e6?rik=l%2fE%2fLSw9lHNfUg&amp;riu=http%3a%2f%2fwww.ictgroup.com.tw%2fes%2fimages%2ff_logo.png&amp;ehk=W1VgtJL892WD4GAFE292Va09BetTiHcPVnHrzxK9rJw%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" />
+                    <img alt="Cliente 5" class="client-logo" src="https://th.bing.com/th/id/R.0404996488736a62ecde89d9ec3069d8?rik=z44n0%2f8Ubgw51g&amp;riu=http%3a%2f%2f8lineshop.com%2fimages%2fproduct%2fbrands%2flogo-pyramid-technologies.jpg&amp;ehk=We%2flrVGt09GdxU6IwJy9Mmw%2fIOZ23yI%2boo6la8Vazc8%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="section-container">
+            <h2 class="section-title">Contáct<span>anos</span></h2>
+            <p class="section-subtitle">Estamos listos para ayudarte a llevar tu negocio al siguiente nivel</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="info-title">Ubicación</h3>
+                        <p class="info-text">Av. la noria 319<br />Tlajomulco de Zuñiga</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3 class="info-title">Teléfono</h3>
+                        <p class="info-text">3312987499<br />Lunes a Viernes, 9am - 6pm</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="info-title">Email</h3>
+                        <p class="info-text">tevendingservicio@gmail.com</p>
+                    </div>
+                    <div class="contact-social">
+                        <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="social-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input id="name" name="name" placeholder="Nombre completo" required type="text" />
+                        </div>
+                        <div class="form-group">
+                            <input id="email" name="email" placeholder="Correo electrónico" required type="email" />
+                        </div>
+                        <div class="form-group">
+                            <input id="phone" name="phone" placeholder="Teléfono (opcional)" type="tel" />
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option disabled selected value>Selecciona un servicio</option>
+                                <option value="web">Monederos</option>
+                                <option value="mobile">Billeteros</option>
+                                <option value="marketing">ICT</option>
+                                <option value="consulting">PYRAMID</option>
+                                <option value="other">INNOVATIVE</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Cuéntanos sobre tu proyecto" required rows="5"></textarea>
+                        </div>
+                        <div id="contactMessage" class="contact-message"></div>
+                        <button class="form-button" type="submit" id="contactSubmitBtn">
+                            <span class="btn-text">Enviar mensaje</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Enviando...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a class="footer-logo" href="#inicio">
+                    <span>Te</span>
+                    <span class="logo-highlight">Vending</span>
+                </a>
+                <p class="footer-description">Transformamos ideas en experiencias excepcionales.</p>
+                <div class="footer-social">
+                    <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="social-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="links-group">
+                    <h3 class="links-title">Empresa</h3>
+                    <ul class="links-list">
+                        <li><a class="footer-link" href="#inicio">Inicio</a></li>
+                        <li><a class="footer-link" href="#servicios">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="links-group">
+                    <h3 class="links-title">Recursos</h3>
+                    <ul class="links-list">
+                        <li><a class="footer-link" href="dashboard.html">Documentación</a></li>
+                    </ul>
+                </div>
+                <div class="links-group">
+                    <h3 class="links-title">Legal</h3>
+                    <ul class="links-list">
+                        <li><a class="footer-link" href="Politicas.html">Politicas</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p class="copyright">© 2025 Octavio RD. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a class="legal-link" href="Politicas.html">Política de privacidad</a>
+                    <span class="divider">|</span>
+                    <a class="legal-link" href="Politicas.html">Términos de servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

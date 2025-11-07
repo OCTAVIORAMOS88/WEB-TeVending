@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>TeVending - Soluciones en Vending</title>
+
+  <!-- Fuentes y estilos -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="estilo.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a class="navbar-logo" href="index.html">
+        <span>Te</span><span class="logo-highlight">Vending</span>
+      </a>
+      <ul class="navbar-menu">
+        <li class="navbar-item"><a class="navbar-link" href="index.html#inicio">Inicio</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="index.html#servicios">Servicios</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="index.html#productos">Productos</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="index.html#clientes">Clientes</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="index.html#contacto">Contacto</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <div class="navbar-search">
+          <input class="search-input" placeholder="Buscar..." type="text" />
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <a class="navbar-button" href="registro.html">Registro</a>
+      </div>
+      <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECCIÓN AUTH -->
+  <section class="auth-section">
+    <div class="auth-container">
+      <div class="auth-tabs">
+        <button class="tab-button active" id="tabLogin">Login</button>
+        <button class="tab-button" id="tabRegister">Registro</button>
+      </div>
+
+      <!-- Formulario Login -->
+      <form class="auth-form active" id="loginForm" autocomplete="on">
+        <h2>Iniciar Sesión</h2>
+        <div class="form-group">
+          <input id="loginEmail" placeholder="Correo electrónico" type="email" required />
+          <div class="error-message" id="loginEmailError"></div>
+        </div>
+        <div class="form-group">
+          <input id="loginPassword" placeholder="Contraseña" type="password" required />
+          <div class="error-message" id="loginPasswordError"></div>
+        </div>
+        <div class="error-message" id="loginGeneralError"></div>
+        <button class="form-button" type="submit" id="loginSubmitBtn">
+          <span class="btn-text">Iniciar Sesión</span>
+          <span class="btn-loading">
+          </span>
+        </button>
+      </form>
+
+      <!-- Formulario Registro -->
+      <form class="auth-form" id="registerForm" autocomplete="off">
+        <h2>Registrarse</h2>
+        <div class="form-group">
+          <input id="regName" placeholder="Nombre completo" type="text" required />
+          <div class="error-message" id="regNameError"></div>
+        </div>
+        <div class="form-group">
+          <input id="regEmail" placeholder="Correo electrónico" type="email" required />
+          <div class="error-message" id="regEmailError"></div>
+        </div>
+        <div class="form-group">
+          <input id="regPassword" placeholder="Contraseña" type="password" minlength="4" required />
+          <div class="error-message" id="regPasswordError"></div>
+        </div>
+        <div class="success-message" id="registerSuccess"></div>
+        <div class="error-message" id="registerGeneralError"></div>
+        <button class="form-button" type="submit" id="registerSubmitBtn">
+          <span class="btn-text">Registrarse</span>
+          <span class="btn-loading">
+          </span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a class="footer-logo" href="#inicio">
+          <span>Te</span><span class="logo-highlight">Vending</span>
+        </a>
+        <p class="footer-description">Transformamos ideas en experiencias digitales excepcionales.</p>
+        <div class="footer-social">
+          <a class="social-link" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="social-link" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="social-link" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-link" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="links-group">
+          <h3 class="links-title">Empresa</h3>
+          <ul class="links-list">
+            <li><a class="footer-link" href="index.html#inicio">Inicio</a></li>
+            <li><a class="footer-link" href="index.html#servicios">Servicios</a></li>
+          </ul>
+        </div>
+        <div class="links-group">
+          <h3 class="links-title">Recursos</h3>
+          <ul class="links-list">
+            <li><a class="footer-link" href="registro.html">Documentación</a></li>
+          </ul>
+        </div>
+        <div class="links-group">
+          <h3 class="links-title">Legal</h3>
+          <ul class="links-list">
+            <li><a class="footer-link" href="Politicas.html">Términos</a></li>
+            <li><a class="footer-link" href="Politicas.html">Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p class="copyright">© 2025 Octavio RD. Todos los derechos reservados.</p>
+        <div class="footer-legal">
+          <a class="legal-link" href="Politicas.html">Política de privacidad</a>
+          <span class="divider">|</span>
+          <a class="legal-link" href="Politicas.html">Términos de servicio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/registro.js"></script>
+</body>
+</html>
