@@ -1447,3 +1447,60 @@ body {
                 text-align: center;
             }
         }
+/* === ESTILO UNIFICADO PARA BOTONES DEL DASHBOARD === */
+.btn-primary,
+.dropdown-btn {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 1.6rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(41, 68, 184, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary:hover,
+.dropdown-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(41, 68, 184, 0.4);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  min-width: 220px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  z-index: 10;
+  padding: 0.5rem 0;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  display: block;
+  transition: var(--transition);
+}
+
+.dropdown-content a:hover {
+  background: rgba(102, 126, 234, 0.1);
+  color: #6423a5;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
